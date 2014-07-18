@@ -1,0 +1,23 @@
+<h1><%= @restaurant.name %></h1>
+
+<div class="row">
+  <div class="col-xs-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <%= @restaurant.name %> - <%= @restaurant.property %>
+        <small class="pull-right">
+          <%= @restaurant.alphabet %>
+          <%= @restaurant.name_kana %>
+        </small>
+      </div>
+      <div class="panel-body">
+        <%= @restaurant.pref.name if @restaurant.pref %>
+        <%= @restaurant.area.name if @restaurant.area %>
+        <%= @restaurant.zip %>
+        <%= @restaurant.address %>
+        <%= @restaurant.description %>
+      </div>
+    </div>
+  </div>
+</div>
+

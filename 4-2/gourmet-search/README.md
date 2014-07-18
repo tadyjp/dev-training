@@ -1,0 +1,4 @@
+solr-training
+=============
+
+solr-training
